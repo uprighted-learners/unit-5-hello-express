@@ -25,7 +25,7 @@ Your work will result in:
 - [ ] The first step you will need to do is to import `express`. Node.js imports work differently than JavaScript and React and use the following syntax:
 `const example = require('example')`
 - [ ] The second step is assigning the invocation of `express` to the variable `app`.
-- [ ] The third step is creating a variable to reference the port the app will run on.
+- [ ] The third step is creating a variable to reference the port the app will run on. For this lab, we will be using 4000
 
 ## Open up the connection to a port
 
@@ -43,11 +43,13 @@ app.get('/example', (request, response) => {
     response.send('Hello, example!')
     })
 ```
+- [ ] You can test this route by visiting localhost:4000 in the browser
 - [ ] Did you get this error? `Cannot GET /`. This is caused by an issue with your `GET` route.
 
 ## Set up further `GET` routes
 
 - [ ] Set up at least three more GET routes. They should all be different pages, and the response they send should reflect what page the user is on.
+  - ex. if the route is "/home", when the user visits that page, they should see "Hello from Home"
 
 ## Send HTML on your routes
 
@@ -68,7 +70,7 @@ app.get('/:key', (request,response)=>{
 
 ## Utilize request params
 
-- [ ] Create a new route with a request param of `:page`. Utilize this to dynamically inform the user of which page they are on instead of hardcoding near-identical responses as you did previously. 
+- [ ] Create a new route with a request param of `/:page`. Utilize this to dynamically inform the user of which page they are on instead of hardcoding near-identical responses as you did previously. 
 
 # Review
 
@@ -81,6 +83,6 @@ The software should:
 
 ## Going Further
 
-- Using conditional logic within your `:page` route, send differently styled HTML responses dependent on the value of `:page`.
+- Using conditional logic within your `/:page` route, send differently styled HTML responses dependent on the value of `:page`.
 
 - How could you utilize request params to retrieve information from the user to display on another page? _Utilizing server-side rendering_, set up a form that takes in a user's name. This name should then be passed in the URL to another page and used to greet the user there.
