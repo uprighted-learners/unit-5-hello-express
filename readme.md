@@ -22,7 +22,9 @@ Your work will result in:
 
 ## Set up your server
 
-- [ ] To use Express, we need to install it first. Run `npm install` in your terminal to install express
+- [ ] We need to create an NPM project so we can setup Express. Make sure you're in the `unit-5-hello-express` folder, and run `npm init -y` in your terminal.
+- [ ] You should see `package.json` in the root of your folder
+- [ ] To use Express, we need to install it first. Run `npm install express` in your terminal to install express
 - [ ] The next step you will need to do is to import `express`. Node.js imports work differently than JavaScript and React and use the following syntax:
 `const example = require('example')`
 - [ ] The second step is assigning the invocation of `express` to the variable `app`.
