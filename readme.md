@@ -22,7 +22,8 @@ Your work will result in:
 
 ## Set up your server
 
-- [ ] The first step you will need to do is to import `express`. Node.js imports work differently than JavaScript and React and use the following syntax:
+- [ ] To use Express, we need to install it first. Run `npm install` in your terminal to install express
+- [ ] The next step you will need to do is to import `express`. Node.js imports work differently than JavaScript and React and use the following syntax:
 `const example = require('example')`
 - [ ] The second step is assigning the invocation of `express` to the variable `app`.
 - [ ] The third step is creating a variable to reference the port the app will run on. For this lab, we will be using 4000
@@ -32,6 +33,7 @@ Your work will result in:
 - [ ] You will need to use the `listen` method on `app`.
 - [ ] `listen` takes two arguments, the `port` variable, and a callback function.
 - [ ] Set up the callback function to print a message to the console that informs the user of which port the server is listening on.
+- [ ] In your terminal, enter `npm start`. You should see your message print out to the console.
 
 ## Set up your first `GET` route
 
@@ -53,14 +55,14 @@ app.get('/example', (request, response) => {
 
 ## Send HTML on your routes
 
-- [ ] Your `.send` methods can also send HTML. This is a basic example of server-side rendering. Change all of the responses on your routes to utilize HTML. 
+- [ ] Your `.send` methods can also send HTML. This is a basic example of server-side rendering. Change all of the responses on your routes to utilize HTML.
 ```js
 response.send("<h1>Hello, <b>example</b>!</h1>")
 ```
 
 ## Set up request params
 
-- [ ] Servers can also utilize params passed in the URL. 
+- [ ] Servers can also utilize params passed in the URL.
 ```js
 app.get('/:key', (request,response)=>{
   console.log(request.params)
@@ -70,7 +72,7 @@ app.get('/:key', (request,response)=>{
 
 ## Utilize request params
 
-- [ ] Create a new route with a request param of `/:page`. Utilize this to dynamically inform the user of which page they are on instead of hardcoding near-identical responses as you did previously. 
+- [ ] Create a new route with a request param of `/:page`. Utilize this to dynamically inform the user of which page they are on instead of hardcoding near-identical responses as you did previously.
 
 # Review
 
