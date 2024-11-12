@@ -2,7 +2,7 @@
 
 ## Learning
 
-In this lab, we will be using the Express Node.js framework to write our first server.
+In this exercise, we will be using the Express Node.js framework to write our first server.
 
 Topics:
 
@@ -11,7 +11,7 @@ Topics:
 
 ## Achieving
 
-In this lab, we will creating a basic website with a server.
+In this exercise, we will creating a basic website with a server.
 
 Your work will result in:
 
@@ -28,7 +28,7 @@ Your work will result in:
 - [ ] The next step you will need to do is to import `express`. Node.js imports work differently than JavaScript and React and use the following syntax:
 `const example = require('example')`
 - [ ] The second step is assigning the invocation of `express` to the variable `app`.
-- [ ] The third step is creating a variable to reference the port the app will run on. For this lab, we will be using 4000
+- [ ] The third step is creating a variable to reference the port the app will run on. For this exercise, we will be using 4000
 
 ## Open up the connection to a port
 
@@ -78,7 +78,7 @@ app.get('/:key', (request,response)=>{
 
 # Review
 
-In this lab, you set up a basic server that sends different HTML as a response, dependent upon the URL in the browser.
+In this exercise, you set up a basic server that sends different HTML as a response, dependent upon the URL in the browser.
 
 The software should:
 
